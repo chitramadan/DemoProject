@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-23T20:17:06.116+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/demoproject/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="products"
+        sling:resourceType="demoproject/components/structure/page"
+        pageStatus="Not published">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="demoproject/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="demoproject/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="demoproject/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="demoproject/components/content/text"
+                text="&lt;p>This is a content page&lt;/p>"
+                textIsRich="true"/>
+        </par>
+        <first_parsys
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <multifieldrendering
+                jcr:created="{Date}2017-07-23T20:10:33.440+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-07-23T20:17:06.102+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="demoproject/components/content/multifieldrendering"
+                title="Testing it">
+                <items jcr:primaryType="nt:unstructured">
+                    <_x0031_
+                        jcr:primaryType="nt:unstructured"
+                        supportingImageName="false"
+                        supportingImageRef="/content/dam/testing/logo.jpg"
+                        text="chitra"
+                        textdesc="Testing it"/>
+                </items>
+            </multifieldrendering>
+        </first_parsys>
+    </jcr:content>
+</jcr:root>

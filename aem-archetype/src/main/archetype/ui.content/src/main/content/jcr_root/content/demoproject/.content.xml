@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/apps/demoproject/templates/.*]"
+        cq:cloudserviceconfigs="[]"
+        cq:designPath="/etc/designs/demoproject"
+        cq:deviceIdentificationMode="client-side"
+        cq:lastModified="{Date}2017-07-23T17:52:37.342+01:00"
+        cq:lastModifiedBy="admin"
+        cq:loginPage=""
+        cq:profilePage=""
+        cq:siteOwner="admin"
+        jcr:mixinTypes="[]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="demoproject"
+        sling:redirect="{Boolean}true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="foundation/components/redirect"
+        pageStatus="Not published"
+        redirectTarget="/content/demoproject/en/homepage">
+        <cq:siteVariant
+            cq:childNodesMapTo="hreflang"
+            cq:variantDomain=""
+            cq:variantFamily="geometrixx"
+            jcr:mixinTypes="[]"
+            jcr:primaryType="nt:unstructured"
+            data-bmap-devgroups="browser, oldBrowser, highResolutionDisplay"/>
+        <image
+            jcr:lastModified="{Date}2017-07-23T17:52:37.037+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[]"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0">
+            <file/>
+        </image>
+    </jcr:content>
+    <en/>
+</jcr:root>

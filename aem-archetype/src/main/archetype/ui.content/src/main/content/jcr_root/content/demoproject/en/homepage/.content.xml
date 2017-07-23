@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-23T20:02:33.408+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/demoproject/templates/page-home"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="homepage"
+        sling:resourceType="demoproject/components/structure/page"
+        pageStatus="Not published">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="demoproject/components/structure/logo"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="demoproject/components/structure/topnav"/>
+        <first_parsys
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <multifieldrendering
+                jcr:created="{Date}2017-07-23T19:36:27.845+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-07-23T20:02:33.401+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="demoproject/components/content/multifieldrendering"
+                title="This is Multi component test">
+                <items jcr:primaryType="nt:unstructured">
+                    <_x0031_
+                        jcr:primaryType="nt:unstructured"
+                        supportingImageName="false"
+                        supportingImageRef="/content/dam/testing/logo.jpg"
+                        text="Chitra"
+                        textdesc="Test"/>
+                    <_x0032_
+                        jcr:primaryType="nt:unstructured"
+                        supportingImageName="false"
+                        supportingImageRef="/content/dam/projects/testing/cover"
+                        text="Good"
+                        textdesc="Awesome"/>
+                </items>
+            </multifieldrendering>
+            <listchildren
+                jcr:created="{Date}2017-07-23T19:05:51.979+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-07-23T19:06:30.239+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="demoproject/components/content/listChildren"
+                parentPath="/content/testing/en"/>
+        </first_parsys>
+    </jcr:content>
+    <products/>
+</jcr:root>
