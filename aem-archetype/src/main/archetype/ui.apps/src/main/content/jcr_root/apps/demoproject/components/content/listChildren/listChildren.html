@@ -18,6 +18,12 @@
 
 <h2>Child pages of the given parent "${properties.parentPath}" are:</h2>
 
+<sly data-sly-test="${properties.rteText}">
+
+${properties.rteText @ context='html'}
+
+</sly>
+
 <sly data-sly-test="${listChildren.childrenList}">
 
 		<sly data-sly-list.listChildrenDetails="${listChildren.childrenList}"  >

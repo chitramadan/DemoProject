@@ -21,6 +21,83 @@
                         sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
                         fieldLabel="Enter Parent Path"
                         name="./parentPath"/>
+                    <rte
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                        fieldDescription="Enter Description"
+                        fieldLabel="Enter description"
+                        name="./rteText">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="[modifylink,unlink]">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}316">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection"/>
+                                </linkDialogConfig>
+                            </links>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[paste-plaintext,copy,cut]"/>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="none"
+                                maxUndoSteps="{Long}50"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="[bold]"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <Paragraph
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Paragraph"
+                                        tag="p"/>
+                                    <Headingh2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading 2"
+                                        tag="h2"/>
+                                    <Headingh3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading 3"
+                                        tag="h3"/>
+                                    <Headingh4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading 4"
+                                        tag="h4"/>
+                                </formats>
+                            </paraformat>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="none"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="cq:WidgetCollection"
+                                features="*"/>
+                        </rtePlugins>
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,#paraformat,image#imageProps,#justify,#lists,links#modifylink,links#unlink]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <lists
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                            ref="lists"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </inline>
+                            </cui>
+                        </uiSettings>
+                    </rte>
                 </items>
             </column>
         </items>
