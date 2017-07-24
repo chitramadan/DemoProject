@@ -41,6 +41,13 @@
                 components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/list,/libs/wcm/foundation/components/textimage,/libs/wcm/foundation/components/title,group:DemoProjectGroup]">
                 <section jcr:primaryType="nt:unstructured"/>
             </first_parsys>
+			<second_parsys
+                jcr:lastModified="{Date}2017-07-24T08:54:09.076+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="[/libs/foundation/components/download,/libs/foundation/components/reference,/libs/foundation/components/sitemap]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </second_parsys>
         </page>
     </jcr:content>
     <clientlib-all/>
