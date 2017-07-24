@@ -1,0 +1,10 @@
+Please Note Below points:
+
+1) Create a service user "readservice" and give read permissions to it on the root directory, before testing this code.
+2) This code has been developed and tested in AEM 6.2
+3) I have added 2 custom component in the first parsys, apart from the other OOTB components asked for, for the testing purpose.
+4) Site has been created using Geometrixx site, so you may find traces of Geometrixx in the content root pages.
+5) AEM project has been created from Maven Archetype
+6) Adding rte in multifiled was creating css issues and it was not getting rendered properly in multifield, which would require deep debugging of OOTB libraries and
+might require customisation as well, so I have skipped that part for now and added textarea in multifield component.
+7) Just to demonstrate the working of rte component, I have added the same in list children component instead of multifield component.
